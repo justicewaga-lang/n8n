@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: n8n-docker
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_EDITOR_BASE_URL
+        value: https://n8n-docker.onrender.com
+      - key: WEBHOOK_TUNNEL_URL
+        value: https://n8n-docker.onrender.com
