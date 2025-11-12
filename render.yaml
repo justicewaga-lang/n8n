@@ -6,6 +6,7 @@ services:
     region: oregon
     dockerfilePath: ./Dockerfile
     port: 5678
+    startCommand: n8n start
     envVars:
       - key: N8N_EDITOR_BASE_URL
         value: https://n8n-1.onrender.com
