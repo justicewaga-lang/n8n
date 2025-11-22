@@ -6,10 +6,9 @@ services:
       name: n8n-disk
       mountPath: /data
       sizeGB: 1
-    plan: free
+    plan: starter
     region: oregon
     dockerfilePath: ./Dockerfile
-    startCommand: n8n start
     envVars:
       - key: N8N_EDITOR_BASE_URL
         value: https://n8n-1-63gt.onrender.com
